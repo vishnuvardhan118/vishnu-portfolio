@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animated Skills Bar - Coding Power</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #0077b6;
+            padding: 40px;
+            background-image: url(skillsbg.avif);
+            background-size: cover; /* Make the background cover the entire page */
+            background-position: center; /* Center the background image */
+        }
+
+        .container-wrapper {
+            display: flex;
+            gap: 20px; /* Add some space between the boxes */
+        }
+
+        .container, .education-box {
+            width: 550px;
+            background: rgb(170, 163, 163);
+            border-radius: 10px;
+            padding: 15px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .container .skill {
+            margin-bottom: 30px;
+            width: 100%;
+            align-items: center;
+            position: relative;
+        }
+
+        .container .skill h3 {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .container .skill h4 {
+            float: right;
+        }
+
+        .container .skill .skill-bar {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 100%;
+            height: 17px;
+            border-radius: 15px;
+            background: #48cae4;
+        }
+
+        .container .skill .fill-bar {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            height: 17px;
+            border-radius: 15px;
+            background: #0077b6;
+        }
+
+        .container .skill .html {
+            animation: html 2s;
+            width: 80%;
+        }
+
+        .container .skill .css {
+            animation: css 2s;
+            width: 70%;
+        }
+
+        .container .skill .python {
+            animation: python 2s;
+            width: 70%;
+        }
+
+        .education-box {
+            border: 1px solid #ccc;
+        }
+
+        .education-box h3 {
+            margin-bottom: 10px;
+        }
+
+        .education-entry {
+            margin-bottom: 15px;
+        }
+
+        .institution {
+            font-weight: bold;
+        }
+
+        .head {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: rgb(231, 221, 221);
+            padding: 15px 30px;
+            border-radius: 0 0 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>About me</h1>    
+    </div>
+    <div class="container-wrapper">
+        <div class="container">
+            <h1>Skills</h1>
+            <div class="skill">
+                <h3>HTML</h3>
+                <h4>80%</h4>
+                <span class="skill-bar"></span>
+                <span class="fill-bar html"></span>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <h4>70%</h4>
+                <span class="skill-bar"></span>
+                <span class="fill-bar css"></span>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <h4>70%</h4>
+                <span class="skill-bar"></span>
+                <span class="fill-bar python"></span>
+            </div>
+        </div>
+        <div class="education-box">
+            <h3>Education</h3>
+        
+            <div class="education-entry">
+              <div class="institution">SVREC, Nandyal</div>
+              <div>B.Tech - Electronics and Communication Engineering</div>
+              <div>2022 - 2026</div>
+            </div>
+        
+            <div class="education-entry">
+              <div class="institution">Narendra Junior College, Guntur</div>
+              <div>Intermediate - MPC</div>
+              <div>2020 - 2022</div>
+            </div>
+        
+            <div class="education-entry">
+              <div class="institution">Vishwabharathi High School, Giddalur</div>
+              <div>SSC</div>
+              <div>2020</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

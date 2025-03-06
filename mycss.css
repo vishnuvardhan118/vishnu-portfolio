@@ -1,0 +1,67 @@
+.containers{
+    background-image: url(mainbg.avif);
+    background-size: cover;
+    width: 125%;
+    height: 100%;
+}
+.main{
+    color: white;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+
+
+}
+
+.links{
+    text-align: center;
+    padding: 0%;
+}
+.content{
+    display: flex;
+    justify-content:flex-start;
+
+}
+.head-head{
+text-align: center;
+font-weight: bold;
+font-size: 25px;
+color: white;
+}
+.logo-port{
+    padding: 40;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+.navlinks{
+    text-align: center;
+    
+    word-spacing: 50px;
+    
+}
+.nav-headings{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+html{
+    height: 100%;
+    width: 100%;
+    background-position: top;
+}
+body{
+    width: 1054px;
+    height: 1054px;
+}
+.self-intro{
+    text-align:left;
+    padding: 100px;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
