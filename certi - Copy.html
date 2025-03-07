@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Certificates</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 40px;
+            background-image: url(image\ copy.png); /* Set background image for the body */
+            background-size: cover; /* Ensure the background covers the entire body */
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+        }
+
+        .certificate-box {
+            width: 310px;
+            background: transparent;
+            border: 2px solid #b1a7a7; /* Add a border color around the certificate boxes */
+            border-radius: 10px;
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 5px; /* Add some space between the boxes */
+        }
+
+        .certificate-box img {
+            max-width: 100%; /* Set max-width to 100% to contain images within the box */
+            border-radius: 10px;
+        }
+
+        .certificate-title {
+            font-weight: bold;
+            margin: 10px 0;
+            color: rgb(190, 198, 206);
+            padding: 1vh;
+
+        }
+
+        .head {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: rgb(204, 204, 212);
+            padding: 15px 30px;
+            border-radius: 0 0 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Certificates</h1>    
+    </div>
+    <div class="container">
+        <div class="certificate-box">
+            <img src="certificate.webp" alt="Certificate 1 Image">
+            <div class="certificate-title">Python development</div>
+        
+        </div>
+        <div class="certificate-box">
+            <img src="certificate.webp" alt="Certificate 2 Image">
+            <div class="certificate-title"> embededded system</div>
+            
+        </div>
+        <div class="certificate-box">
+            <img src="certificate.webp" alt="Certificate 3 Image">
+            <div class="certificate-title">web development</div>
+            
+        </div>
+        <div class="certificate-box">
+            <img src="certificate.webp" alt="Certificate 4 Image">
+            <div class="certificate-title">Edx certificate</div>
+            
+        </div>
+    </div>
+</body>
+</html>
