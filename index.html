@@ -15,9 +15,7 @@
             color: white;
         }
         .containers {
-            display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
             background-image: url(main.jpeg);
             background-size: cover;
@@ -78,18 +76,17 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
-        .content {
+        .content-container {
             display: flex;
-            flex-direction: column;
-            justify-content: left;
-            align-items: flex-start;
-            height: 35vh;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
             margin-top: 12vh;
-            margin-left: 5vh;
-            margin-right: 80vh;
+        }
+        .content {
+            flex: 3;
+            margin-right: 50px;
             text-align: left;
-            padding: 20vh 1vh;
-            color: rgb(255, 249, 240);
         }
         h1 {
             font-size: 40px;
@@ -100,11 +97,24 @@
             font-size: 18px;
             line-height: 1.5;
         }
+        .new-image {
+            flex: 2;
+            text-align: right;
+            margin-right: 20vh;
+            margin-top: 10vh;
+        }
+        .new-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 125px;
+
+        }
         .cvbtn {
             position: absolute;
             bottom: 15px;
             left: 15px;
             margin-left: 5vh;
+        
         }
         .cvbtn button {
             font-size: 18px;
@@ -142,15 +152,20 @@
                 </div>
             </nav>
         </header>
-        <div class="content">
-            <h1>I'm Vishnu Vardhan</h1>
-            <h3>
-                As a passionate and dedicated student,<br>
-                I am constantly striving to expand my knowledge<br>
-                and tackle new challenges. My curiosity drives me to excel in academics,<br>
-                creative projects, and extracurricular activities.<br>
-                I am eager to bring my unique perspective and enthusiasm for learning to new opportunities.
-            </h3>
+        <div class="content-container">
+            <div class="content">
+                <h1>I'm Vishnu Vardhan</h1>
+                <h3>
+                    As a passionate and dedicated student,
+                    I am constantly striving to expand my knowledge
+                    and tackle new challenges. My curiosity drives me to excel in academics,
+                    creative projects, and extracurricular activities.
+                    I am eager to bring my unique perspective and enthusiasm for learning to new opportunities.
+                </h3>
+            </div>
+            <div class="new-image">
+                <img src="lathi.jpg" alt="My Image">
+            </div>
         </div>
         <div class="cvbtn">
             <button>
